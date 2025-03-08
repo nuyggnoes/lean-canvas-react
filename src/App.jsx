@@ -1,10 +1,12 @@
-import Card1 from './components/Card1';
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Card1 />
+      <Header />
+      <Outlet />
     </>
   );
 }
