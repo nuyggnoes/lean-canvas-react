@@ -1,5 +1,6 @@
 import { useLocation, useParams, useSearchParams } from 'react-router-dom';
 import CanvasTitle from '../components/CanvasTitle';
+import LeanCanvas from '../components/LeanCanvas';
 
 function CanvasDetail() {
   const { id } = useParams();
@@ -11,9 +12,7 @@ function CanvasDetail() {
   return (
     <div className="text-3xl">
       <CanvasTitle />
-      <p>id : {id}</p>
-      <p>keyword : {searchParams.get('keyword')}</p>
-      <p>hash : {location.hash}</p>
+      <LeanCanvas />
     </div>
   );
 }
